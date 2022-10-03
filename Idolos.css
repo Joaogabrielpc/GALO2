@@ -1,0 +1,222 @@
+body{
+    background-color: gray;
+}
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color:white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a{
+    color: bisque;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+}
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.4s;
+    display: none;
+}
+.menu-bg,#menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle,black,gray);
+    border-radius:15px;
+    transition: 0.4s ease;
+}
+#menu-bar{
+    z-index: 2;
+}
+.change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%,-30%);
+}
+.change-bar{
+    background-color: white;
+}
+.change #bar1{
+    transform: translateY(4px)rotateZ(-45deg);
+}
+.change #bar3{
+    transform: translateY(-6px)rotate(45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change{
+    display: block;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  1vh  1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  1vh  1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh 1vh  ;
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#a1{
+    background-color: black;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border-radius: 15px;
+    border: 2px solid white;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5px;
+    justify-items: center;
+}
+#a2{
+    background-color:black ;
+    grid-row-start:8;
+    grid-row-end:0;
+}
+#a2txt1{
+    background-color: black;
+    grid-row-start:8;
+    grid-row-end:29;
+    grid-column-start: 2;
+    grid-column-end: 5;
+   
+
+}
+#a2txt2{
+    background-color: black;
+    grid-row-start:29;
+    grid-row-end:43;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#a3{
+    grid-row-start:47;
+    grid-row-end:0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#a3txt1{
+    background-color: black;
+    grid-row-start:47;
+    grid-row-end:68;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#a3txt2{
+    background-color: black;
+    grid-row-start:68;
+    grid-row-end:82;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#a4{
+    
+    grid-row-start:86;
+    grid-row-end:0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#a4txt1{
+    background-color: black;
+    grid-row-start:86;
+    grid-row-end:107;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#a4txt2{
+    background-color: black;
+    grid-row-start:107;
+    grid-row-end:121;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#a5{
+    grid-row-start:125;
+    grid-row-end:0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#a5txt1{
+    background-color: black;
+    grid-row-start:125;
+    grid-row-end:146;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#a5txt2{
+    background-color: black;
+    grid-row-start:146;
+    grid-row-end:160;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#txt1{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#txt2{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#atxt1{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#atxt2{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#btxt2{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#btxt1{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#ctxt1{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}
+#ctxt2{
+color: white;
+margin-left: 10PX;
+font-size: large;
+}

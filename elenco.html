@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco</title>
+    <style>
+        .container{
+            border-radius:30px;
+            text-align:center;
+            height:1000px;
+            flex-wrap:wrap;
+            display: flex;
+            justify-content: center;
+        }
+        .elemento{
+            width:200px;
+            height:343px;
+            background-color:black;
+            border:2px solid white;
+            border-radius:15px;
+            color:white;
+            
+            
+            
+        }
+        h1{
+            color: white;
+            background-image: linear-gradient(to top,black,gray);
+            border:3px solid white;
+            border-radius:15px;
+            text-align:center;
+            width: 500px;
+            margin-left: 420px;
+
+        }
+        body{
+            background-color:gray;
+        }
+footer{
+    color:white;
+    text-align: center;
+}
+body{
+    background-color: gray;
+}
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color:white;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a{
+    color: bisque;
+    text-decoration: none;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li{
+    list-style: none;
+    padding: 16px 0;
+}
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.4s;
+    display: none;
+}
+.menu-bg,#menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle,black,gray);
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+#menu-bar{
+    z-index: 2;
+}
+.change-bg{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%,-30%);
+}
+.change-bar{
+    background-color: white;
+}
+.change #bar1{
+    transform: translateY(4px)rotateZ(-45deg);
+}
+.change #bar3{
+    transform: translateY(-6px)rotate(45deg);
+}
+.change #bar2{
+    opacity: 0;
+}
+.change{
+    display: block;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="menu-bar">
+        <div id="menu"onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+            
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="idolos.html">Ídolos</a></li>
+            <li><a href="estadio.html">Estádio</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <script src="script.js"></script>
+    <h1>Time do Atlético Mineiro</h1>
+    <div class="container">
+        <div class="elemento">
+           Cuca
+           <p><img class="01" src="cuca.jpg" alt="" width="180px">Alexi Stival, mais conhecido como Cuca,é um treinador e ex-futebolista brasileiro que atuava como atacante. Atualmente comanda o Atlético Mineiro.</p>
+           
+        </div>
+    <div class="elemento">
+        Everson
+        <p><img  class="01" src="erveson.jpg" alt="" width="172px">Éverson Felipe Marques Pires, mais conhecido como Éverson, é um futebolista brasileiro que atua como goleiro.Joga pelo Atlético Mineiro,sendo também goleiro reserva da Seleção Brasileira.</p>
+    </div>
+    <div class="elemento">
+        Junior A.
+        <p><img  class="01"src="junior.jpg" alt="" width="169px">Junior Osmar Ignacio Alonso Mujica é um futebolista paraguaio que atua como zagueiro e lateral-esquerdo. Atualmente, defende o Atlético Mineiro, emprestado pelo Krasnodar.</p>
+    </div>
+    <div class="elemento">
+        Igor R.
+        <p><img  class="01"src="igor rabelo.jpg" alt="" width="167px"><br>Igor Rabello da Costa, mais conhecido apenas como Igor Rabello, é um futebolista brasileiro que atua como zagueiro. Atualmente joga no Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        G. Arana
+        <p><img class="01" src="arana.jpg" alt="" width="162px">Guilherme Antonio Arana Lopes, mais conhecido como Guilherme Arana, é um futebolista brasileiro que atua como lateral-esquerdo. Atualmente, joga no Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Mariano
+        <p><img class="01" src="mariano.jpg" alt="" width="162px">Mariano Ferreira Filho , é um futebolista brasileiro que atua como lateral-direito. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Allan
+        <p><img class="01"src="allan.jpg" alt="" width="164px"><br>Allan Rodrigues de Souza, conhecido simplesmente como Allan,é um futebolista brasileiro que atua como volante. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Jair
+        <p><img class="01"src="jair.jpg" alt="" width="168px"><br>Jair Rodrigues Júnior, conhecido apenas como Jair, é um futebolista brasileiro que atua como volante. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Zaracho
+        <p><img class="01"src="zaracho.jpg" alt="" width="158px">Federico Matías Javier Zaracho, conhecido como Matías Zaracho, é um futebolista argentino que atua como meia-atacante e ponta. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Hulk
+        <p><img class="01"src="hulk.jpg" alt="" width="160px">Givanildo Vieira de Sousa, mais conhecido como Hulk, é um futebolista brasileiro que atua como atacante. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Keno
+        <p><img class="01"src="keno.jpg" alt="" width="162px">Marcos da Silva França, mais conhecido como Keno, é um futebolista brasileiro que atua como atacante. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Vargas
+        <p><img class="01"src="vargas.jpg" alt="" width="162px">Eduardo Jesús Vargas Rojas é um futebolista chileno que atua como atacante. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Nacho
+        <p><img class="01"src="nacho.jpg" alt="" width="162px">Ignacio Martín Fernández, também conhecido como Nacho Fernández, é um futebolista argentino que atua como meio-campista. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Rubens
+        <p><img class="01"src="rubens.jpg" alt="" width="162px">Rubens Antonio Dias, conhecido apenas como Rubens, é um futebolista profissional brasileiro que atua como meio-campista do Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Revér
+        <p><img class="01"src="rever.jpg" alt="" width="161px"><br>Réver Humberto Alves Araújo, mais conhecido como Réver, é um futebolista brasileiro que atua como zagueiro. Atualmente defende o Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Pavón 
+        <p><img class="01"src="pavon.jpg" alt="" width="162px">Cristian David Pavón é um futebolista argentino que atua como ponta-direita. Atualmente joga no Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Pedrinho
+        <p><img class="01"src="pedrinho.jpg" alt=""
+            width="165">Pedro Victor Delmino da Silva, mais conhecido como Pedrinho, é um futebolista brasileiro que atua como meio-campista e ponta-direita. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Alan Kardec
+        <p><img class="01"src="alan kardec.jpg" alt="" width="162px"><br>Alan Kardec de Souza Pereira Júnior é um futebolista brasileiro que atua como centroavante. Atualmente joga no Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Jemerson
+        <p><img class="01"src="jermeson.jpg" alt="" width="165px">Jemerson de Jesus Nascimento, ou simplesmente Jemerson, é um futebolista brasileiro que atua como zagueiro. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Ademir
+        <p><img class="01"src="ademir.jpg" alt="" width="164px">Ademir da Silva Santos Junior, mais conhecido como Ademir é um futebolista brasileiro que atua como atacante. Atualmente joga pelo Atlético Mineiro</p>
+    </div>
+    <div class="elemento">
+        Nathan Silva
+        <p><img class="01"src="nathan silva.jpg" alt="" width="164px">Nathanael Ananias da Silva, mais conhecido como Nathan Silva, é um futebolista brasileiro que atua como zagueiro e volante. Atualmente, joga no Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Guga
+        <p><img src="guga.jfif" alt="" width="166px">Cláudio Rodrigues Gomes, conhecido apenas como Guga, é um futebolista brasileiro que atua como lateral-direito. Atualmente, joga pelo Atlético Mineiro.</p>
+    </div>
+    <div class="elemento">
+        Eduardo Sasha
+        <p><img src="sasha.jpg" alt="" >Eduardo Colcenti Antunes, mais conhecido como Eduardo Sasha ou somente Sasha é um futebolista brasileiro que atua como </p>
+    </div>
+
+</div>
+
+
+
+<br><br><br><br>
+    
+
+</head>
+</body>
+</html>
